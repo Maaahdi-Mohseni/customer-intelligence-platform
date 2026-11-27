@@ -1,0 +1,50 @@
+categorical_features = [
+    "gender",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+]
+    
+numerical_features = [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "SeniorCitizen"
+]
+
+required_features = categorical_features + numerical_features
+
+
+categorical_values = {
+    "gender": ['Female', 'Male'],
+    "Partner": ['No', 'Yes'],
+    "Dependents": ['No', 'Yes'],
+    "PhoneService": ['No', 'Yes'],
+    "MultipleLines": ['No', 'No phone service', 'Yes'],
+    "InternetService": ['DSL', 'Fiber optic', 'No'],
+   " OnlineSecurity": ['No', 'No internet service', 'Yes'],
+   "OnlineBackup": ['No', 'No internet service', 'Yes'],
+    "DeviceProtection": ['No', 'No internet service', 'Yes'],
+    "TechSupport": ['No', 'No internet service', 'Yes'],
+    "StreamingTV": ['No', 'No internet service', 'Yes'],
+    "StreamingMovies": ['No', 'No internet service', 'Yes'],
+    "Contract": ['Month-to-month', 'One year', 'Two year'],
+    "PaperlessBilling": ['No', 'Yes'],
+    "PaymentMethod": [
+        'Bank transfer (automatic)', 
+        'Credit card (automatic)', 
+        'Electronic check', 
+        'Mailed check']
+    }
+        

@@ -17,7 +17,7 @@ def tune_model(model_pipline , x_train , y_train):
     )
     
     param_grid = {
-        "Classifier" : [0.01, 0.1, 1, 10, 100]
+        "classifier__C" : [0.01, 0.1, 1, 10, 100]
     }
     
     grid_search = GridSearchCV(

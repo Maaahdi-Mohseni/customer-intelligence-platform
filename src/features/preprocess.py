@@ -5,33 +5,12 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder , StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
+from src.features.schema import (
+    categorical_features,
+    numerical_features
+)
 
 def build_preprocessor():
-    
-    categorical_features = [
-        "gender",
-        "Partner",
-        "Dependents",
-        "PhoneService",
-        "MultipleLines",
-        "InternetService",
-        "OnlineSecurity",
-        "OnlineBackup",
-        "DeviceProtection",
-        "TechSupport",
-        "StreamingTV",
-        "StreamingMovies",
-        "Contract",
-        "PaperlessBilling",
-        "PaymentMethod"
-    ]
-    
-    numerical_features = [
-        "tenure",
-        "MonthlyCharges",
-        "TotalCharges",
-        "SeniorCitizen"
-    ]
     
     numerical_pipeline = Pipeline(
         steps=[
